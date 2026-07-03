@@ -1,0 +1,146 @@
+{
+  "theme": "dark",
+  "archetype": "5 (Luxury)",
+  "color_palette": {
+    "background": "#050505",
+    "surface": "rgba(255, 255, 255, 0.03)",
+    "surface_glass": "rgba(0, 0, 0, 0.6)",
+    "border": "rgba(255, 255, 255, 0.1)",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#A1A1AA",
+    "accent": "#D4AF37",
+    "error": "#EF4444",
+    "success": "#22C55E"
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Cormorant Garamond, serif",
+      "weights": ["300", "400", "600"],
+      "usage": "H1 to H3. Use tracking-tighter for large text."
+    },
+    "body": {
+      "font_family": "Outfit, sans-serif",
+      "weights": ["300", "400"],
+      "usage": "General body copy and descriptions."
+    },
+    "mono_accents": {
+      "font_family": "JetBrains Mono, monospace",
+      "weights": ["400"],
+      "usage": "Engine specs, pricing, technical details. Use uppercase and tracking-[0.2em] for overlines."
+    }
+  },
+  "layout_spacing": {
+    "spacing_scale": "Generous (p-8, p-16, p-24)",
+    "grid_strategy": "Mode A: The Tetris Grid for brand pages and galleries. High asymmetry. Elements spanning multiple columns.",
+    "container_padding": "Internal padding p-8 for bordered containers to prevent text collision."
+  },
+  "components": {
+    "buttons": "Flat, sharp edges, 1px solid border. Hover states use backdrop-blur and border color shift. No pill shapes. Use data-testid on all interactive elements.",
+    "cards": "Crystal Glassmorphism (bg-black/60, backdrop-blur-xl, border-white/10). No soft shadows, rely on 1px inner stroke.",
+    "navigation": "Sticky glassmorphic header (z-50) with logo, links, and CTA. Links must be visible on desktop.",
+    "car_carousel": "Horizontal coverflow carousel. GSAP + ScrollTrigger for scroll-jacking, or Framer Motion for drag/swipe. Central image scaled up, flanking images scaled down with translateZ depth."
+  },
+  "motion": {
+    "scroll": "Lenis for smooth scrolling momentum.",
+    "animations": "Framer Motion for page transitions and micro-interactions. Slow, deliberate easing (e.g., ease: [0.16, 1, 0.3, 1]).",
+    "3d_scene": "React Three Fiber (R3F) + Drei. Use <Environment> and <Float> for atmospheric background (e.g., floating chrome ring or abstract particles) to enhance cinematic feel without overpowering content."
+  },
+  "media_urls": {
+    "hero_video": {
+      "url": "https://videos.pexels.com/video-files/5309381/5309381-uhd_2560_1440_25fps.mp4",
+      "description": "Cinematic dark car driving video for homepage hero background."
+    },
+    "brands": [
+      {
+        "name": "Ferrari",
+        "cars": [
+          "https://images.unsplash.com/photo-1592198084033-aade902d1aae?q=85&w=1080",
+          "https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=85&w=1080"
+        ],
+        "founder": "https://images.unsplash.com/photo-1532751203793-812308a10d8e?q=85&w=600"
+      },
+      {
+        "name": "Porsche",
+        "cars": [
+          "https://images.unsplash.com/photo-1581439645268-ea7bbe6bd091?q=85&w=1080",
+          "https://images.unsplash.com/photo-1628890954311-74476fcbf0d4?q=85&w=1080"
+        ],
+        "founder": "https://images.unsplash.com/photo-1494914430776-93cd7e4b3ea2?q=85&w=600"
+      },
+      {
+        "name": "Tesla",
+        "cars": [
+          "https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=85&w=1080",
+          "https://images.unsplash.com/photo-1617788138017-80ad40651399?q=85&w=1080"
+        ],
+        "founder": "https://images.unsplash.com/photo-1442188950719-e8a67aea613a?q=85&w=600"
+      },
+      {
+        "name": "Lamborghini",
+        "cars": [
+          "https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?q=85&w=1080",
+          "https://images.unsplash.com/photo-1627050627214-9d4362975432?q=85&w=1080"
+        ],
+        "founder": "https://images.unsplash.com/photo-1532751203793-812308a10d8e?q=85&w=600"
+      },
+      {
+        "name": "Bugatti",
+        "cars": [
+          "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=85&w=1080",
+          "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=85&w=1080"
+        ],
+        "founder": "https://images.unsplash.com/photo-1494914430776-93cd7e4b3ea2?q=85&w=600"
+      },
+      {
+        "name": "Rolls-Royce",
+        "cars": [
+          "https://images.unsplash.com/photo-1631835759178-01121d596482?q=85&w=1080",
+          "https://images.unsplash.com/photo-1631835759178-01121d596482?q=85&w=1080"
+        ],
+        "founder": "https://images.unsplash.com/photo-1442188950719-e8a67aea613a?q=85&w=600"
+      },
+      {
+        "name": "BMW",
+        "cars": [
+          "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?q=85&w=1080",
+          "https://images.unsplash.com/photo-1618642542397-ef97a739f1d7?q=85&w=1080"
+        ],
+        "founder": "https://images.unsplash.com/photo-1532751203793-812308a10d8e?q=85&w=600"
+      },
+      {
+        "name": "Mercedes",
+        "cars": [
+          "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=85&w=1080",
+          "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=85&w=1080"
+        ],
+        "founder": "https://images.unsplash.com/photo-1494914430776-93cd7e4b3ea2?q=85&w=600"
+      },
+      {
+        "name": "Audi",
+        "cars": [
+          "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=85&w=1080",
+          "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=85&w=1080"
+        ],
+        "founder": "https://images.unsplash.com/photo-1442188950719-e8a67aea613a?q=85&w=600"
+      },
+      {
+        "name": "Toyota",
+        "cars": [
+          "https://images.unsplash.com/photo-1629897048514-3dd7414cdfce?q=85&w=1080",
+          "https://images.unsplash.com/photo-1629897048514-3dd7414cdfce?q=85&w=1080"
+        ],
+        "founder": "https://images.unsplash.com/photo-1532751203793-812308a10d8e?q=85&w=600"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Ensure all fonts (Cormorant Garamond, Outfit, JetBrains Mono) are imported.",
+    "Implement Lenis for smooth scrolling immediately.",
+    "Use Framer Motion for the horizontal coverflow carousel on the Brand page.",
+    "Use R3F for a subtle 3D background element in the hero (e.g., floating particles or abstract mesh) if feasible, or stick to the Pexels video background as the primary hero visual with 3D CSS transforms for UI elements.",
+    "All interactive elements MUST have a data-testid attribute in kebab-case.",
+    "Use the Tetris Grid (Mode A) for the About page layout, showcasing founders and brand history with asymmetric spans.",
+    "The Car Details page must feature a layout where the car image can be rotated (via CSS 3D transforms on hover or Framer Motion drag). Use JetBrains Mono for engine specs.",
+    "Apply the Crystal Glassmorphism style to the navigation header and floating stat cards over the hero video."
+  ]
+}

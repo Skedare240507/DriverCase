@@ -3,9 +3,13 @@ import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, ChevronDown, Play, Gauge, Sparkles, ArrowUpRight } from "lucide-react";
 import { brands } from "@/data/brands";
+import HeroScene from "@/components/HeroScene";
+import ImageWithFallback from "@/components/ImageWithFallback";
 
 const HERO_VIDEO =
   "https://videos.pexels.com/video-files/5309381/5309381-uhd_2560_1440_25fps.mp4";
+const HERO_POSTER =
+  "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=85&w=1920&auto=format&fit=crop";
 
 const stats = [
   { label: "Marques", value: "10" },
@@ -44,6 +48,10 @@ export default function HomePage() {
         className="relative min-h-screen w-full overflow-hidden"
       >
         <motion.div style={{ y }} className="absolute inset-0">
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${HERO_POSTER})` }}
+          />
           <video
             data-testid="hero-video"
             src={HERO_VIDEO}
@@ -51,14 +59,18 @@ export default function HomePage() {
             muted
             loop
             playsInline
-            className="w-full h-full object-cover"
-            poster="https://images.unsplash.com/photo-1580274455191-1c62238fa333?q=85&w=1920&auto=format&fit=crop"
+            preload="auto"
+            className="relative w-full h-full object-cover"
+            poster={HERO_POSTER}
           />
           <div className="absolute inset-0 hero-fade" />
           <div className="absolute inset-0 bg-black/40" />
         </motion.div>
 
-        {/* Rotating ring */}
+        {/* R3F 3D scene layered over hero */}
+        <HeroScene />
+
+        {/* Rotating ring accent */}
         <div className="absolute right-[-12vw] top-[10vh] pointer-events-none hidden md:block">
           <div className="relative w-[60vw] h-[60vw] max-w-[900px] max-h-[900px]">
             <div className="absolute inset-0 border border-white/10 rounded-full spin-slow" />
@@ -266,10 +278,15 @@ export default function HomePage() {
                     data-testid={`brand-card-${b.slug}`}
                     className="group block relative w-full h-full overflow-hidden border border-white/10 hover:border-[#D4AF37]/60 transition-all duration-500"
                   >
-                    <div
-                      className="absolute inset-0 bg-cover bg-center transition-transform duration-[1400ms] ease-out group-hover:scale-105"
-                      style={{ backgroundImage: `url(${b.hero})` }}
-                    />
+                    <div className="absolute inset-0 transition-transform duration-[1400ms] ease-out group-hover:scale-105">
+                      <ImageWithFallback
+                        src={b.hero}
+                        alt={b.name}
+                        color={b.color}
+                        fallbackLabel={b.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
                     <div className="absolute inset-0 flex flex-col justify-between p-6 md:p-8">
                       <div className="flex items-start justify-between">
@@ -382,9 +399,11 @@ export default function HomePage() {
             {brands.slice(0, 5).map((b, i) => (
               <Reveal key={b.slug} delay={i * 0.05}>
                 <div className="relative h-72 overflow-hidden border border-white/10 group">
-                  <img
+                  <ImageWithFallback
                     src={b.founder.photo}
                     alt={b.founder.name}
+                    color={b.color}
+                    fallbackLabel={b.founder.name}
                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, ChevronLeft, ChevronRight, Gauge, Zap, Wind, DollarSign, Cog, Car as CarIcon } from "lucide-react";
 import { getCar } from "@/data/brands";
 import FavoriteButton from "@/components/FavoriteButton";
+import ImageWithFallback from "@/components/ImageWithFallback";
 
 export default function CarDetailPage() {
   const { slug } = useParams();
@@ -108,20 +109,25 @@ export default function CarDetailPage() {
               onTouchEnd={onDragEnd}
               data-testid="car-3d-viewer"
             >
-              <motion.img
+              <motion.div
                 ref={imgRef}
                 key={galleryIndex}
-                src={gallery[galleryIndex]}
-                alt={car.name}
                 initial={{ opacity: 0 }}
                 animate={{
                   opacity: 1,
                   transform: `perspective(1400px) rotateY(${rotation * 0.15}deg) scale(1.02)`,
                 }}
                 transition={{ duration: 0.6 }}
-                className="w-full h-full object-cover"
-                draggable={false}
-              />
+                className="w-full h-full"
+              >
+                <ImageWithFallback
+                  src={gallery[galleryIndex]}
+                  alt={car.name}
+                  color={brand.color}
+                  fallbackLabel={car.name}
+                  className="w-full h-full object-cover pointer-events-none"
+                />
+              </motion.div>
               <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
                 <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/60">
@@ -150,7 +156,13 @@ export default function CarDetailPage() {
                         : "border-white/10 hover:border-white/40"
                     }`}
                   >
-                    <img src={g} alt="" className="w-full h-full object-cover" />
+                    <ImageWithFallback
+                      src={g}
+                      alt={car.name}
+                      color={brand.color}
+                      fallbackLabel={car.name}
+                      className="w-full h-full object-cover"
+                    />
                   </button>
                 ))}
               </div>
@@ -272,9 +284,11 @@ export default function CarDetailPage() {
       <section className="relative py-24 border-t border-white/10">
         <div className="max-w-[1600px] mx-auto px-6 md:px-10 grid grid-cols-12 gap-8 items-center">
           <div className="col-span-12 md:col-span-6">
-            <img
+            <ImageWithFallback
               src={brand.founder.photo}
               alt={brand.founder.name}
+              color={brand.color}
+              fallbackLabel={brand.founder.name}
               className="w-full max-h-[420px] object-cover grayscale"
             />
           </div>

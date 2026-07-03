@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, ArrowRight, ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { getBrand, brands } from "@/data/brands";
 import FavoriteButton from "@/components/FavoriteButton";
+import ImageWithFallback from "@/components/ImageWithFallback";
 
 export default function BrandPage() {
   const { slug } = useParams();
@@ -62,9 +63,11 @@ export default function BrandPage() {
       {/* Brand Hero */}
       <section className="relative min-h-[85vh] overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <ImageWithFallback
             src={brand.hero}
             alt={brand.name}
+            color={brand.color}
+            fallbackLabel={brand.name}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-[#050505]" />
@@ -154,9 +157,11 @@ export default function BrandPage() {
                   }}
                 >
                   <div className="relative w-full h-full overflow-hidden border border-white/10">
-                    <img
+                    <ImageWithFallback
                       src={c.image}
                       alt={c.name}
+                      color={brand.color}
+                      fallbackLabel={c.name}
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
@@ -273,9 +278,11 @@ export default function BrandPage() {
                 data-testid={`lineup-card-${c.slug}`}
               >
                 <div className="relative h-64 overflow-hidden">
-                  <img
+                  <ImageWithFallback
                     src={c.image}
                     alt={c.name}
+                    color={brand.color}
+                    fallbackLabel={c.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1200ms]"
                   />
                   <div className="absolute top-4 right-4">

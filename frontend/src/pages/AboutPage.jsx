@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { brands } from "@/data/brands";
 import { ArrowRight } from "lucide-react";
+import ImageWithFallback from "@/components/ImageWithFallback";
 
 const Reveal = ({ children, delay = 0 }) => (
   <motion.div
@@ -82,9 +83,11 @@ export default function AboutPage() {
                     className="group relative w-full h-full overflow-hidden border border-white/10 hover:border-[#D4AF37]/60 transition"
                     data-testid={`founder-card-${b.slug}`}
                   >
-                    <img
+                    <ImageWithFallback
                       src={b.founder.photo}
                       alt={b.founder.name}
+                      color={b.color}
+                      fallbackLabel={b.founder.name}
                       className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-[1200ms] group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />

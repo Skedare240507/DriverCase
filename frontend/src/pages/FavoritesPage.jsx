@@ -5,6 +5,7 @@ import { Heart, ArrowRight, Trash2 } from "lucide-react";
 import { toast } from "sonner";
 import { api } from "@/lib/api";
 import { getCar } from "@/data/brands";
+import ImageWithFallback from "@/components/ImageWithFallback";
 
 export default function FavoritesPage() {
   const [favorites, setFavorites] = useState([]);
@@ -90,9 +91,11 @@ export default function FavoritesPage() {
                   data-testid={`garage-card-${car.slug}`}
                 >
                   <div className="relative h-64 overflow-hidden">
-                    <img
+                    <ImageWithFallback
                       src={car.image}
                       alt={car.name}
+                      color={brand.color}
+                      fallbackLabel={car.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1200ms]"
                     />
                     <button

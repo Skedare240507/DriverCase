@@ -9,14 +9,14 @@ export const brands = [
     country: "Italy · 1939",
     color: "#DC0000",
     logo: "FERRARI",
-    hero: "https://images.unsplash.com/photo-1592198084033-aade902d1aae?q=85&w=1920&auto=format&fit=crop",
+    hero: "https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&w=1920",
     story:
       "Enzo Ferrari transformed a racing dream into the most iconic supercar marque in history. Each Cavallino Rampante is a rolling sculpture of engineering obsession.",
     founder: {
       name: "Enzo Ferrari",
       born: "1898 – 1988",
       role: "Founder · Racing Driver",
-      photo: "https://images.unsplash.com/photo-1610652492500-ded49ceeb378?q=85&w=800&auto=format&fit=crop",
+      photo: null,
       quote:
         "I have yet to see a road that says no to a Ferrari.",
     },
@@ -41,12 +41,8 @@ export const brands = [
           { name: "Bianco Avus", hex: "#EDEDE7" },
         ],
         features: ["Carbon Fiber Monocoque", "eManettino Drive Selector", "Assetto Fiorano Package", "Active Aerodynamics"],
-        gallery: [
-          "https://images.unsplash.com/photo-1592198084033-aade902d1aae?q=85&w=1600&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=85&w=1600&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1592198084033-aade902d1aae?q=85&w=1600&auto=format&fit=crop",
+        gallery: ["https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&w=1920", "https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&w=1920", "https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&w=1920"],
+        image: "https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&w=1920",
       },
       {
         slug: "ferrari-296-gtb",
@@ -67,11 +63,8 @@ export const brands = [
           { name: "Blu Corsa", hex: "#1A2B58" },
         ],
         features: ["Piccolo V12 Sound Signature", "eDrive Mode", "Assetto Fiorano Optional"],
-        gallery: [
-          "https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=85&w=1600&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1614026480209-cef7fe9d0a91?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=85&w=1600&auto=format&fit=crop",
+        gallery: ["https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&w=1920", "https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&w=1920"],
+        image: "https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&w=1920",
       },
       {
         slug: "ferrari-f8-tributo",
@@ -92,10 +85,8 @@ export const brands = [
           { name: "Nero Daytona", hex: "#0B0B0D" },
         ],
         features: ["Side Slip Control 6.1", "Ferrari Dynamic Enhancer", "S-Duct Aero"],
-        gallery: [
-          "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=85&w=1600&auto=format&fit=crop",
+        gallery: ["https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&w=1920"],
+        image: "https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&w=1920",
       },
     ],
   },
@@ -106,14 +97,14 @@ export const brands = [
     country: "Italy · 1963",
     color: "#FFB800",
     logo: "LAMBORGHINI",
-    hero: "https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?q=85&w=1920&auto=format&fit=crop",
+    hero: "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1920",
     story:
       "Born from a feud with Enzo Ferrari, Ferruccio Lamborghini built the most theatrical supercars ever conceived — angular, aggressive, unapologetic.",
     founder: {
       name: "Ferruccio Lamborghini",
       born: "1916 – 1993",
       role: "Founder · Industrialist",
-      photo: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=85&w=800&auto=format&fit=crop",
+      photo: null,
       quote: "I did what I liked. And I liked cars.",
     },
     cars: [
@@ -137,11 +128,8 @@ export const brands = [
           { name: "Nero Aldebaran", hex: "#0A0A0A" },
         ],
         features: ["Monofuselage Carbon Chassis", "13 Driving Modes", "Steer-by-Wire"],
-        gallery: [
-          "https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?q=85&w=1600&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1627050627214-9d4362975432?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?q=85&w=1600&auto=format&fit=crop",
+        gallery: ["https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1920", "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1920"],
+        image: "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1920",
       },
       {
         slug: "lamborghini-huracan-sto",
@@ -162,10 +150,8 @@ export const brands = [
           { name: "Bianco Monocerus", hex: "#F1F1EE" },
         ],
         features: ["Cofango Front Section", "Rear-Wheel Steering", "Brembo CCM-R Brakes"],
-        gallery: [
-          "https://images.unsplash.com/photo-1627050627214-9d4362975432?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1627050627214-9d4362975432?q=85&w=1600&auto=format&fit=crop",
+        gallery: ["https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1920"],
+        image: "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1920",
       },
       {
         slug: "lamborghini-urus-performante",
@@ -185,10 +171,8 @@ export const brands = [
           { name: "Grigio Titans", hex: "#5D5F62" },
         ],
         features: ["Rally Mode", "Air Suspension Delete", "Carbon Roof"],
-        gallery: [
-          "https://images.unsplash.com/photo-1621135802920-133df287f89c?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1621135802920-133df287f89c?q=85&w=1600&auto=format&fit=crop",
+        gallery: ["https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1920"],
+        image: "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1920",
       },
     ],
   },
@@ -199,14 +183,14 @@ export const brands = [
     country: "Germany · 1931",
     color: "#B12028",
     logo: "PORSCHE",
-    hero: "https://images.unsplash.com/photo-1580274455191-1c62238fa333?q=85&w=1920&auto=format&fit=crop",
+    hero: null,
     story:
       "Ferdinand Porsche engineered a philosophy: form follows function. From the 356 to the Taycan, every model chases the same singular curve of purity.",
     founder: {
       name: "Ferdinand Porsche",
       born: "1875 – 1951",
       role: "Founder · Engineer",
-      photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=85&w=800&auto=format&fit=crop",
+      photo: null,
       quote: "In the beginning I looked around and could not find the car of my dreams. So I decided to build it myself.",
     },
     cars: [
@@ -229,11 +213,8 @@ export const brands = [
           { name: "Guards Red", hex: "#C8102E" },
         ],
         features: ["DRS Active Aero", "3-Chamber Adjustable Damping", "Roll Cage Ready"],
-        gallery: [
-          "https://images.unsplash.com/photo-1580274455191-1c62238fa333?q=85&w=1600&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1611821064430-0d40291d0f0b?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1580274455191-1c62238fa333?q=85&w=1600&auto=format&fit=crop",
+        gallery: [null],
+        image: null,
       },
       {
         slug: "porsche-taycan-turbo-s",
@@ -254,10 +235,8 @@ export const brands = [
           { name: "Carrara White", hex: "#F0F0EA" },
         ],
         features: ["800V Architecture", "Porsche Active Ride", "Launch Control"],
-        gallery: [
-          "https://images.unsplash.com/photo-1611821064430-0d40291d0f0b?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1611821064430-0d40291d0f0b?q=85&w=1600&auto=format&fit=crop",
+        gallery: [null],
+        image: null,
       },
       {
         slug: "porsche-918-spyder",
@@ -277,10 +256,8 @@ export const brands = [
           { name: "Martini Racing", hex: "#F5F5F0" },
         ],
         features: ["Removable Roof Panels", "Rear-Wheel Steering", "Weissach Package"],
-        gallery: [
-          "https://images.unsplash.com/photo-1554744512-d6c603f27c54?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1554744512-d6c603f27c54?q=85&w=1600&auto=format&fit=crop",
+        gallery: [null],
+        image: null,
       },
     ],
   },
@@ -291,14 +268,14 @@ export const brands = [
     country: "France · 1909",
     color: "#0055A5",
     logo: "BUGATTI",
-    hero: "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=85&w=1920&auto=format&fit=crop",
+    hero: null,
     story:
       "Ettore Bugatti sculpted machines closer to jewelry than transportation. Today, Molsheim still measures milestones in horsepower and horology.",
     founder: {
       name: "Ettore Bugatti",
       born: "1881 – 1947",
       role: "Founder · Artist-Engineer",
-      photo: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=85&w=800&auto=format&fit=crop",
+      photo: null,
       quote: "Nothing is too beautiful, nothing is too expensive.",
     },
     cars: [
@@ -321,10 +298,8 @@ export const brands = [
           { name: "Argent Atlantique", hex: "#B7BDC1" },
         ],
         features: ["Elongated Longtail Body", "10-Radiator Cooling", "Michelin Sport Cup 2"],
-        gallery: [
-          "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=85&w=1600&auto=format&fit=crop",
+        gallery: [null],
+        image: null,
       },
       {
         slug: "bugatti-divo",
@@ -344,10 +319,8 @@ export const brands = [
           { name: "Bugatti Blue", hex: "#0E5290" },
         ],
         features: ["+90kg Downforce vs Chiron", "Bespoke Roof Scoop", "Only 40 Produced"],
-        gallery: [
-          "https://images.unsplash.com/photo-1621135802920-133df287f89c?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1621135802920-133df287f89c?q=85&w=1600&auto=format&fit=crop",
+        gallery: [null],
+        image: null,
       },
       {
         slug: "bugatti-tourbillon",
@@ -367,10 +340,8 @@ export const brands = [
           { name: "Argent Poli", hex: "#C0C2C4" },
         ],
         features: ["Analogue Watch-Inspired Cluster", "800V Battery", "Sapphire Instrument Bezels"],
-        gallery: [
-          "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=85&w=1600&auto=format&fit=crop",
+        gallery: [null],
+        image: null,
       },
     ],
   },
@@ -381,14 +352,14 @@ export const brands = [
     country: "United Kingdom · 1904",
     color: "#7A0019",
     logo: "ROLLS-ROYCE",
-    hero: "https://images.unsplash.com/photo-1631835759178-01121d596482?q=85&w=1920&auto=format&fit=crop",
+    hero: null,
     story:
       "Charles Rolls met Henry Royce, and the definition of luxury changed forever. Every Spirit of Ecstasy leans into whisper-quiet dominance.",
     founder: {
       name: "Charles Rolls & Henry Royce",
       born: "1877 & 1863",
       role: "Co-Founders",
-      photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=85&w=800&auto=format&fit=crop",
+      photo: null,
       quote: "Strive for perfection in everything you do.",
     },
     cars: [
@@ -411,10 +382,8 @@ export const brands = [
           { name: "Belladonna Purple", hex: "#5E3B76" },
         ],
         features: ["Starlight Doors", "Planar Suspension", "Digital Spirit of Ecstasy"],
-        gallery: [
-          "https://images.unsplash.com/photo-1631835759178-01121d596482?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1631835759178-01121d596482?q=85&w=1600&auto=format&fit=crop",
+        gallery: [null],
+        image: null,
       },
       {
         slug: "rolls-royce-phantom",
@@ -434,10 +403,8 @@ export const brands = [
           { name: "Peacock Blue", hex: "#0A5A82" },
         ],
         features: ["Gallery Dashboard", "Magic Carpet Ride", "Coach Doors"],
-        gallery: [
-          "https://images.unsplash.com/photo-1631835759178-01121d596482?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1631835759178-01121d596482?q=85&w=1600&auto=format&fit=crop",
+        gallery: [null],
+        image: null,
       },
       {
         slug: "rolls-royce-cullinan",
@@ -457,10 +424,8 @@ export const brands = [
           { name: "Iced Gunmetal", hex: "#3F4649" },
         ],
         features: ["Illuminated Grille", "Everywhere Drive Mode", "Bespoke Interior"],
-        gallery: [
-          "https://images.unsplash.com/photo-1631835759178-01121d596482?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1631835759178-01121d596482?q=85&w=1600&auto=format&fit=crop",
+        gallery: [null],
+        image: null,
       },
     ],
   },
@@ -471,14 +436,14 @@ export const brands = [
     country: "Germany · 1916",
     color: "#0066B1",
     logo: "BMW",
-    hero: "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?q=85&w=1920&auto=format&fit=crop",
+    hero: "https://images.pexels.com/photos/3849554/pexels-photo-3849554.jpeg?auto=compress&cs=tinysrgb&w=1920",
     story:
       "Bavarian Motor Works began building aircraft engines. That obsession with lightweight power still hums through every M-badged crankshaft.",
     founder: {
       name: "Karl Rapp & Franz Josef Popp",
       born: "1882 · 1886",
       role: "Founders",
-      photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=85&w=800&auto=format&fit=crop",
+      photo: null,
       quote: "Sheer driving pleasure. Always.",
     },
     cars: [
@@ -501,11 +466,8 @@ export const brands = [
           { name: "Alpine White", hex: "#F3F3F0" },
         ],
         features: ["Carbon Fiber Roof", "Rear Seat Delete", "Michelin Cup 2 R"],
-        gallery: [
-          "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?q=85&w=1600&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1618642542397-ef97a739f1d7?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?q=85&w=1600&auto=format&fit=crop",
+        gallery: ["https://images.pexels.com/photos/3849554/pexels-photo-3849554.jpeg?auto=compress&cs=tinysrgb&w=1920", "https://images.pexels.com/photos/3849554/pexels-photo-3849554.jpeg?auto=compress&cs=tinysrgb&w=1920"],
+        image: "https://images.pexels.com/photos/3849554/pexels-photo-3849554.jpeg?auto=compress&cs=tinysrgb&w=1920",
       },
       {
         slug: "bmw-i7-m70",
@@ -525,10 +487,8 @@ export const brands = [
           { name: "Aventurin Red", hex: "#7A0F1B" },
         ],
         features: ["Theater Screen 31.3\"", "Automatic Doors", "M Sport Package"],
-        gallery: [
-          "https://images.unsplash.com/photo-1618642542397-ef97a739f1d7?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1618642542397-ef97a739f1d7?q=85&w=1600&auto=format&fit=crop",
+        gallery: ["https://images.pexels.com/photos/3849554/pexels-photo-3849554.jpeg?auto=compress&cs=tinysrgb&w=1920"],
+        image: "https://images.pexels.com/photos/3849554/pexels-photo-3849554.jpeg?auto=compress&cs=tinysrgb&w=1920",
       },
       {
         slug: "bmw-xm-label-red",
@@ -548,10 +508,8 @@ export const brands = [
           { name: "Frozen Deep Grey", hex: "#3B3E43" },
         ],
         features: ["Vintage-Inspired Interior", "M-Specific Chassis", "M Sound"],
-        gallery: [
-          "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?q=85&w=1600&auto=format&fit=crop",
+        gallery: ["https://images.pexels.com/photos/3849554/pexels-photo-3849554.jpeg?auto=compress&cs=tinysrgb&w=1920"],
+        image: "https://images.pexels.com/photos/3849554/pexels-photo-3849554.jpeg?auto=compress&cs=tinysrgb&w=1920",
       },
     ],
   },
@@ -562,14 +520,14 @@ export const brands = [
     country: "Germany · 1926",
     color: "#00ADEF",
     logo: "MERCEDES",
-    hero: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=85&w=1920&auto=format&fit=crop",
+    hero: "https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&w=1920",
     story:
       "Karl Benz and Gottlieb Daimler independently invented the automobile. Their legacy merged into a three-pointed star seen from every horizon.",
     founder: {
       name: "Karl Benz & Gottlieb Daimler",
       born: "1844 · 1834",
       role: "Automobile Pioneers",
-      photo: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=85&w=800&auto=format&fit=crop",
+      photo: null,
       quote: "The love of inventing never dies.",
     },
     cars: [
@@ -591,10 +549,8 @@ export const brands = [
           { name: "Solarbeam Yellow", hex: "#F1DA00" },
         ],
         features: ["Active Aero", "Petronas Livery", "DRS System"],
-        gallery: [
-          "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=85&w=1600&auto=format&fit=crop",
+        gallery: ["https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&w=1920"],
+        image: "https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&w=1920",
       },
       {
         slug: "mercedes-eqs",
@@ -614,10 +570,8 @@ export const brands = [
           { name: "Diamond White", hex: "#EFEFE9" },
         ],
         features: ["MBUX Hyperscreen", "Rear-Axle Steering", "Air Balance"],
-        gallery: [
-          "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=85&w=1600&auto=format&fit=crop",
+        gallery: ["https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&w=1920"],
+        image: "https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&w=1920",
       },
       {
         slug: "mercedes-g63",
@@ -637,10 +591,8 @@ export const brands = [
           { name: "Designo Cardinal", hex: "#7B1F2A" },
         ],
         features: ["Three Locking Differentials", "AMG Performance Exhaust", "Ladder Frame"],
-        gallery: [
-          "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=85&w=1600&auto=format&fit=crop",
+        gallery: ["https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&w=1920"],
+        image: "https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&w=1920",
       },
     ],
   },
@@ -651,14 +603,14 @@ export const brands = [
     country: "Germany · 1909",
     color: "#BB0A30",
     logo: "AUDI",
-    hero: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=85&w=1920&auto=format&fit=crop",
+    hero: "https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=1920",
     story:
       "August Horch designed cars with names in two languages. The four rings symbolize a merger — and a manifesto for progress through technology.",
     founder: {
       name: "August Horch",
       born: "1868 – 1951",
       role: "Founder · Engineer",
-      photo: "https://images.unsplash.com/photo-1531727991582-cfd25ce79613?q=85&w=800&auto=format&fit=crop",
+      photo: null,
       quote: "Progress through technology.",
     },
     cars: [
@@ -680,10 +632,8 @@ export const brands = [
           { name: "Vegas Yellow", hex: "#F1C700" },
         ],
         features: ["Torque Rear Mode with 7 Levels", "Fixed Rear Wing", "Only 333 Units"],
-        gallery: [
-          "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=85&w=1600&auto=format&fit=crop",
+        gallery: ["https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=1920"],
+        image: "https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=1920",
       },
       {
         slug: "audi-rs-e-tron-gt",
@@ -703,10 +653,8 @@ export const brands = [
           { name: "Kemora Grey", hex: "#5F6266" },
         ],
         features: ["800V Architecture", "Matrix LED Headlights", "Air Suspension"],
-        gallery: [
-          "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=85&w=1600&auto=format&fit=crop",
+        gallery: ["https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=1920"],
+        image: "https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=1920",
       },
       {
         slug: "audi-rs6-avant",
@@ -726,10 +674,8 @@ export const brands = [
           { name: "Ascari Blue", hex: "#183E7A" },
         ],
         features: ["Sport Differential", "Ceramic Brakes", "760L Cargo"],
-        gallery: [
-          "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=85&w=1600&auto=format&fit=crop",
+        gallery: ["https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=1920"],
+        image: "https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=1920",
       },
     ],
   },
@@ -740,14 +686,14 @@ export const brands = [
     country: "USA · 2003",
     color: "#E31937",
     logo: "TESLA",
-    hero: "https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=85&w=1920&auto=format&fit=crop",
+    hero: null,
     story:
       "Named after Nikola Tesla, powered by silicon and lithium. Musk and the original engineers rewrote the assumptions of what a car should be.",
     founder: {
       name: "Martin Eberhard & Marc Tarpenning",
       born: "Palo Alto, 2003",
       role: "Founding Engineers · CEO Elon Musk",
-      photo: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=85&w=800&auto=format&fit=crop",
+      photo: null,
       quote: "When something is important enough, you do it — even if the odds are against you.",
     },
     cars: [
@@ -770,11 +716,8 @@ export const brands = [
           { name: "Pearl White", hex: "#F0EFEA" },
         ],
         features: ["Yoke Steering", "17\" Cinematic Display", "Track Mode V2"],
-        gallery: [
-          "https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=85&w=1600&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1617788138017-80ad40651399?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=85&w=1600&auto=format&fit=crop",
+        gallery: [null],
+        image: null,
       },
       {
         slug: "tesla-cybertruck",
@@ -794,10 +737,8 @@ export const brands = [
           { name: "Vinyl Wrap Black", hex: "#0A0A0A" },
         ],
         features: ["48V Architecture", "Steer-by-Wire", "Bulletproof Ultra-Hard Cold-Rolled Stainless"],
-        gallery: [
-          "https://images.unsplash.com/photo-1617788138017-80ad40651399?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1617788138017-80ad40651399?q=85&w=1600&auto=format&fit=crop",
+        gallery: [null],
+        image: null,
       },
       {
         slug: "tesla-roadster",
@@ -817,10 +758,8 @@ export const brands = [
           { name: "Deep Blue Metallic", hex: "#0F2E5C" },
         ],
         features: ["Removable Glass Roof", "200 kWh Battery", "SpaceX Cold Air Thrusters (opt)"],
-        gallery: [
-          "https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=85&w=1600&auto=format&fit=crop",
+        gallery: [null],
+        image: null,
       },
     ],
   },
@@ -831,14 +770,14 @@ export const brands = [
     country: "Japan · 1937",
     color: "#EB0A1E",
     logo: "TOYOTA",
-    hero: "https://images.unsplash.com/photo-1629897048514-3dd7414cdfce?q=85&w=1920&auto=format&fit=crop",
+    hero: null,
     story:
       "From loom manufacturer to the world's largest automaker. Kiichiro Toyoda taught the industry that reliability is a design decision.",
     founder: {
       name: "Kiichiro Toyoda",
       born: "1894 – 1952",
       role: "Founder · Engineer",
-      photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=85&w=800&auto=format&fit=crop",
+      photo: null,
       quote: "Ask 'why?' five times about every matter.",
     },
     cars: [
@@ -861,10 +800,8 @@ export const brands = [
           { name: "Cu Later Copper", hex: "#B5651D" },
         ],
         features: ["Active Rear Differential", "Adaptive Suspension", "Launch Control"],
-        gallery: [
-          "https://images.unsplash.com/photo-1629897048514-3dd7414cdfce?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1629897048514-3dd7414cdfce?q=85&w=1600&auto=format&fit=crop",
+        gallery: [null],
+        image: null,
       },
       {
         slug: "toyota-gr-yaris",
@@ -884,10 +821,8 @@ export const brands = [
           { name: "Precious Metal Silver", hex: "#C4C7CA" },
         ],
         features: ["GR-FOUR AWD", "Torsen LSD", "Forged Alloy Wheels"],
-        gallery: [
-          "https://images.unsplash.com/photo-1629897048514-3dd7414cdfce?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1629897048514-3dd7414cdfce?q=85&w=1600&auto=format&fit=crop",
+        gallery: [null],
+        image: null,
       },
       {
         slug: "toyota-land-cruiser",
@@ -907,10 +842,8 @@ export const brands = [
           { name: "Trail Dust", hex: "#B0956F" },
         ],
         features: ["Multi-Terrain Select", "Crawl Control", "Locking Rear Diff"],
-        gallery: [
-          "https://images.unsplash.com/photo-1629897048514-3dd7414cdfce?q=85&w=1600&auto=format&fit=crop",
-        ],
-        image: "https://images.unsplash.com/photo-1629897048514-3dd7414cdfce?q=85&w=1600&auto=format&fit=crop",
+        gallery: [null],
+        image: null,
       },
     ],
   },

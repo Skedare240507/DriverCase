@@ -18,6 +18,17 @@ export default function BrandPage() {
   }, [slug]);
 
   const cars = brand?.cars || [];
+  const carsLen = cars.length;
+
+  const wrapOffset = (i, index) => {
+    // shortest circular distance so both sides always have neighbours
+    if (carsLen === 0) return 0;
+    let d = i - index;
+    const half = carsLen / 2;
+    if (d > half) d -= carsLen;
+    if (d < -half) d += carsLen;
+    return d;
+  };
 
   useEffect(() => {
     const onKey = (e) => {
@@ -53,10 +64,7 @@ export default function BrandPage() {
   }
 
   const car = cars[index];
-  const positions = cars.map((_, i) => {
-    const offset = i - index;
-    return { offset, i };
-  });
+  const positions = cars.map((_, i) => ({ offset: wrapOffset(i, index), i }));
 
   return (
     <div data-testid="brand-page" className="bg-[#050505] text-white">

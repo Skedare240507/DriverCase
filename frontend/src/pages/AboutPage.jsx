@@ -140,44 +140,46 @@ export default function AboutPage() {
             {brands.map((b, i) => (
               <Reveal key={b.slug} delay={i * 0.04}>
                 <div
-                  className="glass border-white/10 hover:border-[#D4AF37]/50 transition"
+                  className="glass border-white/10 hover:border-[#D4AF37]/50 transition grid grid-cols-12 gap-4 items-center p-6"
                   data-testid={`index-brand-${b.slug}`}
                 >
+                  <div className="col-span-2 md:col-span-1">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/40">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                  </div>
                   <Link
                     to={`/brand/${b.slug}`}
-                    className="grid grid-cols-12 gap-4 items-center p-6"
+                    data-testid={`index-brand-link-${b.slug}`}
+                    className="col-span-10 md:col-span-3 group/brand"
                   >
-                    <div className="col-span-2 md:col-span-1">
-                      <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/40">
-                        {String(i + 1).padStart(2, "0")}
-                      </span>
+                    <h3 className="font-display text-3xl md:text-4xl leading-none tracking-tight group-hover/brand:text-[#D4AF37] transition">
+                      {b.name}
+                    </h3>
+                    <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.28em] text-white/50">
+                      {b.country}
                     </div>
-                    <div className="col-span-10 md:col-span-3">
-                      <h3 className="font-display text-3xl md:text-4xl leading-none tracking-tight">
-                        {b.name}
-                      </h3>
-                      <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.28em] text-white/50">
-                        {b.country}
-                      </div>
+                  </Link>
+                  <div className="col-span-12 md:col-span-7">
+                    <div className="flex flex-wrap gap-x-4 gap-y-2">
+                      {b.cars.map((c) => (
+                        <Link
+                          key={c.slug}
+                          to={`/car/${c.slug}`}
+                          data-testid={`index-car-${c.slug}`}
+                          className="text-white/70 hover:text-[#D4AF37] transition text-sm"
+                        >
+                          {c.name}
+                        </Link>
+                      ))}
                     </div>
-                    <div className="col-span-12 md:col-span-7">
-                      <div className="flex flex-wrap gap-x-4 gap-y-2">
-                        {b.cars.map((c) => (
-                          <Link
-                            key={c.slug}
-                            to={`/car/${c.slug}`}
-                            data-testid={`index-car-${c.slug}`}
-                            className="text-white/70 hover:text-[#D4AF37] transition text-sm"
-                            onClick={(e) => e.stopPropagation()}
-                          >
-                            {c.name}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                    <div className="col-span-12 md:col-span-1 md:justify-self-end">
-                      <ArrowRight size={16} className="text-white/60" />
-                    </div>
+                  </div>
+                  <Link
+                    to={`/brand/${b.slug}`}
+                    className="col-span-12 md:col-span-1 md:justify-self-end text-white/60 hover:text-[#D4AF37] transition"
+                    aria-label={`Open ${b.name}`}
+                  >
+                    <ArrowRight size={16} />
                   </Link>
                 </div>
               </Reveal>
